@@ -1,0 +1,19 @@
+.container-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    list-style: none;
+    margin-right: 24px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: black;
+}
