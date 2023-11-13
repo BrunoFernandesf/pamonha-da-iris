@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(243, 235, 226);
+}
+
 .container-menu {
     display: flex;
     justify-content: flex-end;
