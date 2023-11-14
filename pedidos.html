@@ -26,16 +26,83 @@
                     <legend><b>Fórmulário de Pedidos</b></legend>
                     <br>
                     <p>itens</p>
-                    <div class="box-select">
-                        <div>
-                            <input type="checkbox" id="checkbox1" value="html" name="experiencias" class="checkbox" onclick="recebeCheckbox('checkbox1');">
-                            <label for="checkbox1">Html</label>
+
+                    <!--PAMONHAS PEDIDO-->
+                    <div class="pamonhas_pedido">
+
+                        <div class="container">
+                            <label>Tradicional Doce</label>
+                            <button onclick="increment()">+</button>
+                            <h2 id="counting"></h2>
+                            <button onclick="decrement()">-</button>
                         </div>
-                        <div>
-                            <input type="checkbox" id="checkbox2" value="css" name="experiencias" class="checkbox" onclick="recebeCheckbox('checkbox2');">
-                            <label for="checkbox2">Css</label>
+                        
+                        <div class="container">
+                            <label>Tradicional Salgada</label>
+                            <button onclick="increment()">+</button>
+                            <h2 id="counting"></h2>
+                            <button onclick="decrement()">-</button>
                         </div>
+                        
+                        <div class="container">
+                            <label>Doce com coco</label>
+                            <button onclick="increment()">+</button>
+                            <h2 id="counting"></h2>
+                            <button onclick="decrement()">-</button>
+                        </div>
+                        
+                        <div class="container">
+                            <label>Doce com queijo minas</label>
+                            <button onclick="increment()">+</button>
+                            <h2 id="counting"></h2>
+                            <button onclick="decrement()">-</button>
+                        </div>
+                        
+                        <div class="container">
+                            <label>Salgada com queijo minas</label>
+                            <button onclick="increment()">+</button>
+                            <h2 id="counting"></h2>
+                            <button onclick="decrement()">-</button>
+                        </div>
+                        
+                        <div class="container">
+                            <label>Romeu e Julieta</label>
+                            <button onclick="increment()">+</button>
+                            <h2 id="counting"></h2>
+                            <button onclick="decrement()">-</button>
+                        </div>
+                        
+                        <div class="container">
+                            <label>Banana com canela</label>
+                            <button onclick="increment()">+</button>
+                            <h2 id="counting"></h2>
+                            <button onclick="decrement()">-</button>
+                        </div>
+                        
+                        <div class="container">
+                            <label>Carne Seca com queijo minas</label>
+                            <button onclick="increment()">+</button>
+                            <h2 id="counting"></h2>
+                            <button onclick="decrement()">-</button>
+                        </div>
+                        
+                        
+                        <div class="container">
+                            <label>Linguiça com queijo minas</label>
+                            <button onclick="increment()">+</button>
+                            <h2 id="counting"></h2>
+                            <button onclick="decrement()">-</button>
+                        </div>
+                        
+                        <div class="container">
+                            <label>Linguiça com queijo minas e pimenta</label>
+                            <button onclick="increment()">+</button>
+                            <h2 id="counting"></h2>
+                            <button onclick="decrement()">-</button>
+                        </div>
+                        
                     </div>
+                   
 
                     <!--  Coloque abaixo os dados  -->
 
@@ -73,7 +140,7 @@
                     <br><br>
                     <div class="inputBox">
                         <input type="text" name="cidade" id="id_cidade" class="cidade" required>
-                        <label for="id_cidade" class="labelInput">Cidade</label>
+                        <label for="id_cidade" class="labelInput">Bairro</label>
                     </div>
                     <br><br>
                     <button type="button" onclick="whatsenviar();">Peça pelo whats</button>
