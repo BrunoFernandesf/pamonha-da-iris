@@ -9,6 +9,19 @@ body {
     padding-right: 5%;
 }
 
+.carrossel-container {
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.carrossel-slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
 .menu {
     display: flex;
 }
