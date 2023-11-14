@@ -32,25 +32,31 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(nextSlide, 3000);
 });
 
+//Incremento 
+var data = 0;
 var pedidosSelecionados = [];
 
-// Função para receber checkbox
-function recebeCheckbox(checkboxId) {
-    var checkbox = document.getElementById(checkboxId);
+nomeitem = document.getElementById("item1").textContent
+document.getElementById("counting").innerText = data;
 
-    if (checkbox.checked) {
-        console.log(checkbox.value + " está marcado");
-        pedidosSelecionados.push(checkbox.value);
-        console.log("Pedidos selecionados: " + pedidosSelecionados.join(", "));
-    } else {
-        console.log(checkbox.value + " não está marcado");
-        var index = pedidosSelecionados.indexOf(checkbox.value);
-        if (index !== -1) {
-            pedidosSelecionados.splice(index, 1);
-        }
-        console.log("Pedidos selecionados: " + pedidosSelecionados.join(", "));
+//creation of increment function
+function increment() {
+    data = data + 1;
+    document.getElementById("counting").innerText = data;
+
+    if(data >= 1) {
+        pedidosSelecionados.push(nomeitem);
+        pedidosSelecionados.push(data);
+        console.log(pedidosSelecionados);
     }
 }
+//creation of decrement function
+function decrement() {
+    data = data - 1;
+    document.getElementById("counting").innerText = data;
+}
+
+
 
 //Função envio whatsapp
 function whatsenviar(){
