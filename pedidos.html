@@ -6,7 +6,6 @@
     <title>Pamonha da Iris</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -26,6 +25,20 @@
                 <fieldset>
                     <legend><b>Fórmulário de Pedidos</b></legend>
                     <br>
+                    <p>itens</p>
+                    <div class="box-select">
+                        <div>
+                            <input type="checkbox" id="checkbox1" value="html" name="experiencias" class="checkbox" onclick="recebeCheckbox('checkbox1');">
+                            <label for="checkbox1">Html</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox2" value="css" name="experiencias" class="checkbox" onclick="recebeCheckbox('checkbox2');">
+                            <label for="checkbox2">Css</label>
+                        </div>
+                    </div>
+
+                    <!--  Coloque abaixo os dados  -->
+                    
                     <div class="inputBox">
                         <input type="text" name="nome" id="id_nome" class="nome" required>
                         <label for="id_nome" class="labelInput">Nome completo</label>
@@ -71,5 +84,6 @@
             <p>Rua Dona Ana Neri, 140 - MOOCA</p>
         </address>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

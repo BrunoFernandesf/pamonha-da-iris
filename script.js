@@ -30,9 +30,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Muda a cada 5 seg
     setInterval(nextSlide, 3000);
-
 });
 
+var pedidosSelecionados = [];
+
+// Função para receber checkbox
+function recebeCheckbox(checkboxId) {
+    var checkbox = document.getElementById(checkboxId);
+
+    if (checkbox.checked) {
+        console.log(checkbox.value + " está marcado");
+        pedidosSelecionados.push(checkbox.value);
+        console.log("Pedidos selecionados: " + pedidosSelecionados.join(", "));
+    } else {
+        console.log(checkbox.value + " não está marcado");
+        var index = pedidosSelecionados.indexOf(checkbox.value);
+        if (index !== -1) {
+            pedidosSelecionados.splice(index, 1);
+        }
+        console.log("Pedidos selecionados: " + pedidosSelecionados.join(", "));
+    }
+}
+
+//Função envio whatsapp
 function whatsenviar(){
     console.log("Função whatsenviar() chamada!");
 
@@ -51,7 +71,8 @@ function whatsenviar(){
     +"*data entrega :*" +data_entrega+"%0a"
     +"*endereco :*" +endereco+"%0a"
     +"*numero :*" +numero+"%0a"
-    +"*cidade :*" +cidade+"%0a%0a"
+    +"*cidade :*" +cidade+"%0a"
+    +"pedidos: "+pedidosSelecionados+"%0a%0a"
 
     window.open(url, '_blank').focus();
 }
