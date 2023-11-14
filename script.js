@@ -29,5 +29,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //Muda a cada 5 seg
-    setInterval(nextSlide, 5000);
+    setInterval(nextSlide, 3000);
 });
