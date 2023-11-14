@@ -1,6 +1,8 @@
 body {
-    background-color: rgb(243, 235, 226);
+    background-color: #f3ebe2;
     text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .container-menu {
@@ -20,6 +22,11 @@ body {
     display: none;
     position: absolute;
     width: 100%;
+}
+
+img {
+    width: 50%;
+    height: 50%;
 }
 
 .menu {

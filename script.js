@@ -18,13 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
         showSlide(currentSlide);
     }
 
-    // Show the first slide initially
     showSlide(currentSlide);
 
-    // Event listeners for next and previous buttons (assuming you have these buttons)
-    document.getElementById("nextBtn").addEventListener("click", nextSlide);
-    document.getElementById("prevBtn").addEventListener("click", prevSlide);
+    document.addEventListener("click", function (event) {
+        if (event.target.id === "nextBtn") {
+            nextSlide();
+        } else if (event.target.id === "prevBtn") {
+            prevSlide();
+        }
+    });
 
-    // Optional: Automatic slide change every 3 seconds
-    setInterval(nextSlide, 3000);
+    //Muda a cada 5 seg
+    setInterval(nextSlide, 5000);
 });
