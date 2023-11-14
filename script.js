@@ -30,4 +30,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Muda a cada 5 seg
     setInterval(nextSlide, 3000);
+
+    function whatsenviar(){
+        var cel = "+5511975602377";
+
+        var nome = document.querySelector('#nome').value;
+        var telefone = document.querySelector('#telefone').value;
+        var data_entrega = document.querySelector('#data_entrega').value;
+        var endereco = document.querySelector('#endereco').value;
+        var numero = document.querySelector('#numero').value;
+        var cidade = document.querySelector('#cidade').value;
+        
+        var url = "https://wa.me/" + cel + "?text="
+        +"*Nome :*" +nome+"%0a"
+        +"*telefone :*" +telefone+"%0a"
+        +"*data entrega :*" +data_entrega+"%0a"
+        +"*endereco :*" +endereco+"%0a"
+        +"*numero :*" +numero+"%0a"
+        +"*cidade :*" +cidade+"%0a%0a"
+
+        window.open(url, '_blank').focus();
+    }
 });
