@@ -32,28 +32,48 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(nextSlide, 3000);
 });
 
-//Incremento 
 var data = 0;
 var pedidosSelecionados = [];
 
-nomeitem = document.getElementById("item1").textContent
-document.getElementById("counting").innerText = data;
-
-//creation of increment function
-function increment() {
+// Incremento
+function increment(nomeItem) {
     data = data + 1;
     document.getElementById("counting").innerText = data;
 
-    if(data >= 1) {
-        pedidosSelecionados.push(nomeitem);
-        pedidosSelecionados.push(data);
+    // Verificar se o nome do item já está presente no vetor
+    var index = pedidosSelecionados.indexOf(nomeItem);
+
+    if (data >= 1) {
+        if (index === -1) {
+            pedidosSelecionados.push(nomeItem);
+        }
+        pedidosSelecionados[index + 1] = data;
         console.log(pedidosSelecionados);
     }
 }
-//creation of decrement function
-function decrement() {
-    data = data - 1;
-    document.getElementById("counting").innerText = data;
+
+// Decremento
+function decrement(nomeItem) {
+    if (data > 0) {
+        data = data - 1;
+        document.getElementById("counting").innerText = data;
+
+        // Remover o nome do item do vetor se a quantidade for zero
+        if (data === 0) {
+            var index = pedidosSelecionados.indexOf(nomeItem);
+            if (index !== -1) {
+                pedidosSelecionados.splice(index, 2);
+            }
+        } else {
+            // Atualizar a quantidade se ainda houver itens
+            var index = pedidosSelecionados.indexOf(nomeItem);
+            if (index !== -1) {
+                pedidosSelecionados[index + 1] = data;
+            }
+        }
+
+        console.log(pedidosSelecionados);
+    }
 }
 
 
