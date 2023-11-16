@@ -7,6 +7,11 @@
     padding: 0;
 }
 
+.main_itens {
+  display:flex;
+}
+
+
 body {
     background-color:rgb(243, 235, 226);
     font-family: 'Sulphur Point', serif;
@@ -22,13 +27,9 @@ body {
     color: rgb(190, 152, 61);
   }
   
-  
-  
   section {
     max-width: 400px;
     margin: 0 auto;
-    display:flex;
-    flex-direction: column;
   }
   
   header h1 {
