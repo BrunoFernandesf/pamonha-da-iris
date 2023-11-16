@@ -1,0 +1,83 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:rgb(243, 235, 226);
+    font-family: 'Sulphur Point', serif;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  h2 {
+    font-family: 'Agbalumo', serif;
+    text-transform: capitalize;
+    color: rgb(190, 152, 61);
+  }
+  
+  
+  
+  section {
+    max-width: 400px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+  }
+  
+  header h1 {
+    margin-bottom: 4px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  
+  header h1 span {
+    color: #995000;
+  }
+  
+  header p {
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  section {
+    margin-bottom: 24px;
+  }
+  
+  section h2 {
+    background-color:rgb(51, 78, 37);
+    padding: 8px 16px;
+    text-align: center;
+  
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+  
+  ul li {
+    margin-bottom: 16px;
+    display: flex;
+  }
+  
+  li .details {
+  max-width: 219px;
+  }
+  
+  .details h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  .details p {
+    color: rgba(41, 27, 27, 0.6);
+    font-size: 14px;
+    line-height: 21px;
+  }
