@@ -57,7 +57,7 @@ function decrement(nomeItem) {
 }
 
 //Função envio whatsapp
-function whatsenviar(){
+function whatsenviar() {
     console.log("Função whatsenviar() chamada!");
 
     var cel = "+5511975602377";
@@ -68,17 +68,26 @@ function whatsenviar(){
     var endereco = document.querySelector('.endereco').value;
     var numero = document.querySelector('.numero').value;
     var cidade = document.querySelector('.cidade').value;
-    
-    var pedidosString = JSON.stringify(pedidosSelecionados);
+
+    // Substitui os traços por espaços apenas nos nomes dos itens
+    var pedidosString = JSON.stringify(pedidosSelecionados, (key, value) => {
+        if (key === 'nome') {
+            return value.replace(/-/g, ' ');
+        }
+        return value;
+    });
+
+    // Substitui todos os traços por espaços na string resultante
+    pedidosString = pedidosString.replace(/-/g, ' ');
 
     var url = "https://wa.me/" + cel + "?text="
-    +"*Nome :*" +nome+"%0a"
-    +"*telefone :*" +telefone+"%0a"
-    +"*data entrega :*" +data_entrega+"%0a"
-    +"*endereco :*" +endereco+"%0a"
-    +"*numero :*" +numero+"%0a"
-    +"*cidade :*" +cidade+"%0a"
-    +"pedidos: "+pedidosString+"%0a%0a"
+        + "Nome : " + nome + "%0a"
+        + "Telefone :" + telefone + "%0a"
+        + "Data entrega : " + data_entrega + "%0a"
+        + "Endereco : " + endereco + "%0a"
+        + "Número : " + numero + "%0a"
+        + "Cidade : " + cidade + "%0a"
+        + "Pedido: " + pedidosString + "%0a%0a";
 
     window.open(url, '_blank').focus();
 }

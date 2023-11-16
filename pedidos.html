@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pamonha da Iris</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/pedidos.css">
 </head>
 <body>
     <header>
-        <nav class="container-menu">
+        <nav class="container__header">
+            <div class="container__header__logo">
+                <img class="logo_img" src="img/titulo_loja.png">
+            </div>
+
             <ul class="menu">
-                <li class="menu-item"><a href="index.html">Home</a></li>
-                <li class="menu-item"><a href="cardapio.html">Cardápio</a></li>
-                <li class="menu-item"><a href="pedidos.html">Pedidos</a></li>
-                <li class="menu-item"><a href="about.html">Sobre nós</a></li>
+                <li class="menu__item"><a href="index.html">Home</a></li>
+                <li class="menu__item"><a href="cardapio.html">Cardápio</a></li>
+                <li class="menu__item"><a href="pedidos.html">Pedidos</a></li>
+                <li class="menu__item"><a href="about.html">Sobre nós</a></li>
             </ul>
         </nav>
     </header>
@@ -31,82 +35,82 @@
 
                         <div class="container">
                             <label>Tradicional Doce</label>
-                            <button onclick="increment('Tradicional Doce')">+</button>
+                            <button onclick="increment('Tradicional-Doce')">+</button>
                             <h2 id="counting-Tradicional-Doce">0</h2>
-                            <button onclick="decrement('Tradicional Doce')">-</button>
+                            <button onclick="decrement('Tradicional-Doce')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Tradicional Salgada</label>
-                            <button onclick="increment('Tradicional Salgada')">+</button>
+                            <button onclick="increment('Tradicional-Salgada')">+</button>
                             <h2 id="counting-Tradicional-Salgada">0</h2>
-                            <button onclick="decrement('Tradicional Salgada')">-</button>
+                            <button onclick="decrement('Tradicional-Salgada')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Doce com coco</label>
-                            <button onclick="increment('Doce com coco')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Doce com coco')">-</button>
+                            <button onclick="increment('Doce-com-coco')">+</button>
+                            <h2 id="counting-Doce-com-coco">0</h2>
+                            <button onclick="decrement('Doce-com-coco')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Doce com queijo minas</label>
-                            <button onclick="increment('Doce com queijo minas')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Doce com queijo minas')">-</button>
+                            <button onclick="increment('Doce-com-queijo-minas')">+</button>
+                            <h2 id="counting-Doce-com-queijo-minas">0</h2>
+                            <button onclick="decrement('Doce-com-queijo-minas')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Salgada com queijo minas</label>
-                            <button onclick="increment('Salgada com queijo minas')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Salgada com queijo minas')">-</button>
+                            <button onclick="increment('Salgada-com-queijo-minas')">+</button>
+                            <h2 id="counting-Salgada-com-queijo-minas">0</h2>
+                            <button onclick="decrement('Salgada-com-queijo-minas')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Romeu e Julieta</label>
-                            <button onclick="increment('Romeu e Julieta')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Romeu e Julieta')">-</button>
+                            <button onclick="increment('Romeu-e-Julieta')">+</button>
+                            <h2 id="counting-Romeu-e-Julieta">0</h2>
+                            <button onclick="decrement('Romeu-e-Julieta')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Banana com canela</label>
-                            <button onclick="increment('Banana com canela')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Banana com canela')">-</button>
+                            <button onclick="increment('Banana-com-canela')">+</button>
+                            <h2 id="counting-Banana-com-canela">0</h2>
+                            <button onclick="decrement('Banana-com-canela')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Carne Seca com queijo minas</label>
-                            <button onclick="increment('Carne Seca com queijo minas')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Carne Seca com queijo minas')">-</button>
+                            <button onclick="increment('Carne-Seca-com-queijo-minas')">+</button>
+                            <h2 id="counting-Carne-Seca-com-queijo-minas">0</h2>
+                            <button onclick="decrement('Carne-Seca-com-queijo-minas')">-</button>
                         </div>
                         
                         
                         <div class="container">
                             <label>Linguiça com queijo minas</label>
-                            <button onclick="increment('Linguiça com queijo minas')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Linguiça com queijo minas')">-</button>
+                            <button onclick="increment('Linguiça-com-queijo-minas')">+</button>
+                            <h2 id="counting-Linguiça-com-queijo-minas">0</h2>
+                            <button onclick="decrement('Linguiça-com-queijo-minas')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Linguiça com queijo minas e pimenta</label>
-                            <button onclick="increment('Linguiça com queijo minas e pimenta')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Linguiça com queijo minas e pimenta')">-</button>
+                            <button onclick="increment('Linguiça-com-queijo-minas-e-pimenta')">+</button>
+                            <h2 id="counting-Linguiça-com-queijo-minas-e-pimenta">0</h2>
+                            <button onclick="decrement('Linguiça-com-queijo-minas-e-pimenta')">-</button>
                         </div>
                         
                     </div>
 
                     <div class="container">
                         <label id="item1">Pamonha doce</label>
-                        <button onclick="increment('Pamonha doce');">+</button>
-                        <h2 id="counting"></h2>
-                        <button onclick="decrement('Pamonha doce');">-</button>
+                        <button onclick="increment('Pamonha-doce');">+</button>
+                        <h2 id="counting-Pamonha-doce">0</h2>
+                        <button onclick="decrement('Pamonha-doce');">-</button>
                     </div>
 
                     <!--Bolos e tortas-->
@@ -115,72 +119,72 @@
                         
                         <div class="container">
                             <label>Bolo de banana 1,3kg </label>,
-                            <button onclick="increment('Bolo de banana 1,3kg')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Bolo de banana 1,3kg')">-</button>
+                            <button onclick="increment('Bolo-de-banana-1,3kg')">+</button>
+                            <h2 id="counting-Bolo-de-banana-1,3kg">0</h2>
+                            <button onclick="decrement('Bolo-de-banana-1,3kg')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Bolo de milho 1,3kg</label>
-                            <button onclick="increment('Bolo de milho 1,3kg')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Bolo de milho 1,3kg')">-</button>
+                            <button onclick="increment('Bolo-de-milho-1,3kg')">+</button>
+                            <h2 id="counting-Bolo-de-milho-1,3kg">0</h2>
+                            <button onclick="decrement('Bolo-de-milho-1,3kg')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Bolo de mandioca 1,3kg</label>
-                            <button onclick="increment('Bolo de mandioca 1,3kg')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Bolo de mandioca 1,3kg')">-</button>
+                            <button onclick="increment('Bolo-de-mandioca-1,3kg')">+</button>
+                            <h2 id="counting-Bolo-de-mandioca-1,3kg">0</h2>
+                            <button onclick="decrement('Bolo-de-mandioca-1,3kg')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Bolo de pamonha 1,3kg</label>
-                            <button onclick="increment('Bolo de pamonha 1,3kg')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Bolo de pamonha 1,3kg')">-</button>
+                            <button onclick="increment('Bolo-de-pamonha-1,3kg')">+</button>
+                            <h2 id="counting-Bolo-de-pamonha-1,3kg">0</h2>
+                            <button onclick="decrement('Bolo-de-pamonha-1,3kg')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Bolo de cenoura e choco</label>
-                            <button onclick="increment('Bolo de cenoura e choco')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Bolo de cenoura e choco')">-</button>
+                            <button onclick="increment('Bolo-de-cenoura-e-choco')">+</button>
+                            <h2 id="counting-Bolo-de-cenoura-e-choco">0</h2>
+                            <button onclick="decrement('Bolo-de-cenoura-e-choco')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>bolo baby de pamonha 450g</label>
-                            <button onclick="increment('bolo baby de pamonha 450g')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('bolo baby de pamonha 450g')">-</button>
+                            <button onclick="increment('bolo-baby-de-pamonha-450g')">+</button>
+                            <h2 id="counting-bolo-baby-de-pamonha-450g">0</h2>
+                            <button onclick="decrement('bolo-baby-de-pamonha-450g')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>bolo baby de milho 450g</label>
-                            <button onclick="increment('bolo baby de milho 450g')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('bolo baby de milho 450g')">-</button>
+                            <button onclick="increment('bolo-baby-de-milho-450g')">+</button>
+                            <h2 id="counting-bolo-baby-de-milho-450g">0</h2>
+                            <button onclick="decrement('bolo-baby-de-milho-450g')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>bolo de mandioca baby 450g</label>
-                            <button onclick="increment('bolo de mandioca baby 450g')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('bolo de mandioca baby 450g')">-</button>
+                            <button onclick="increment('bolo-de-mandioca-baby-450g')">+</button>
+                            <h2 id="counting-bolo-de-mandioca-baby-450g">0</h2>
+                            <button onclick="decrement('bolo-de-mandioca-baby-450g')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>torta de frango 350g</label>
-                            <button onclick="increment('torta de frango 350g')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('torta de frango 350g')">-</button>
+                            <button onclick="increment('torta-de-frango-350g')">+</button>
+                            <h2 id="counting-torta-de-frango-350g">0</h2>
+                            <button onclick="decrement('torta-de-frango-350g')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>torta de frango 1kg</label>
-                            <button onclick="increment('torta de frango 1kg')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('torta de frango 1kg')">-</button>
+                            <button onclick="increment('torta-de-frango-1kg')">+</button>
+                            <h2 id="counting-torta-de-frango-1kg">0</h2>
+                            <button onclick="decrement('torta-de-frango-1kg')">-</button>
                         </div>
                     </div>
 
@@ -190,96 +194,96 @@
                         
                         <div class="container">
                             <label>Curau 250ml</label>
-                            <button onclick="increment('Curau 250ml')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Curau 250ml')">-</button>
+                            <button onclick="increment('Curau-250ml')">+</button>
+                            <h2 id="counting-Curau-250ml">0</h2>
+                            <button onclick="decrement('Curau-250ml')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>canjica 250ml</label>
-                            <button onclick="increment('canjica 250ml')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('canjica 250ml')">-</button>
+                            <button onclick="increment('canjica-250ml')">+</button>
+                            <h2 id="counting-canjica-250ml">0</h2>
+                            <button onclick="decrement('canjica-250ml')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>pudim de milho 140g</label>
-                            <button onclick="increment('pudim de milho 140g')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('pudim de milho 140g')">-</button>
+                            <button onclick="increment('pudim-de-milho-140g')">+</button>
+                            <h2 id="counting-pudim-de-milho-140g">0</h2>
+                            <button onclick="decrement('pudim-de-milho-140g')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>suco de milho 300ml</label>
-                            <button onclick="increment('suco de milho 300ml')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('suco de milho 300ml')">-</button>
+                            <button onclick="increment('suco-de-milho-300ml')">+</button>
+                            <h2 id="counting-suco-de-milho-300ml">0</h2>
+                            <button onclick="decrement('suco-de-milho-300ml')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>suco de milho 1l</label>
-                            <button onclick="increment('suco de milho 1l')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('suco de milho 1l')">-</button>
+                            <button onclick="increment('suco-de-milho-1l')">+</button>
+                            <h2 id="counting-suco-de-milho-1l">0</h2>
+                            <button onclick="decrement('suco-de-milho-1l')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>cocada cremosa 125g</label>
-                            <button onclick="increment('cocada cremosa 125g')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('cocada cremosa 125g')">-</button>
+                            <button onclick="increment('cocada-cremosa-125g')">+</button>
+                            <h2 id="counting-cocada-cremosa-125g">0</h2>
+                            <button onclick="decrement('cocada-cremosa-125g')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>brigadeiro de milho 25g</label>
-                            <button onclick="increment('brigadeiro de milho 25g')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('brigadeiro de milho 25g')">-</button>
+                            <button onclick="increment('brigadeiro-de-milho-25g')">+</button>
+                            <h2 id="counting-brigadeiro-de-milho-25g">0</h2>
+                            <button onclick="decrement('brigadeiro-de-milho-25g')">-</button>
                         </div>
                         
                     </div>
 
                     <!--Pedidos mini-->
-                    <!--OBSERVAÇAO VER O LIMITE DE CONTADOR DE 30 UNIDADES-->
-                    E CHECK PRA OPCIONAL
+                    <!--Mudar a descrição para informar que são kits de unidades
+                    E CHECK PRA OPCIONAL-->
                     <div class="mini_pedidos">
                         <div class="container">
                             <label>Mini pamonha doce</label>
                             <p>(sem recheio)</p>
-                            <button onclick="increment('Mini pamonha doce')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Mini pamonha doce')">-</button>
+                            <button onclick="increment('Mini-pamonha-doce')">+</button>
+                            <h2 id="counting-Mini-pamonha-doce">0</h2>
+                            <button onclick="decrement('Mini-pamonha-doce')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>Mini pamonha salgada</label>
                             <p>(sem recheio)</p>
-                            <button onclick="increment('Mini pamonha salgada')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('Mini pamonha salgada')">-</button>
+                            <button onclick="increment('Mini-pamonha-salgada')">+</button>
+                            <h2 id="counting-Mini-pamonha-salgada">0</h2>
+                            <button onclick="decrement('Mini-pamonha-salgada')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>mini curau c/ colherzinha</label>
                             <p>(canela opcional)</p>
-                            <button onclick="increment('mini curau c/ colherzinha')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('mini curau c/ colherzinha')">-</button>
+                            <button onclick="increment('mini-curau-c/-colherzinha')">+</button>
+                            <h2 id="counting-mini-curau-c/-colherzinha">0</h2>
+                            <button onclick="decrement('mini-curau-c/-colherzinha')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>mini canjica c/ colherzinha</label>
                             <p>(canela opicional)</p>
-                            <button onclick="increment('mini canjica c/ colherzinha')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('mini canjica c/ colherzinha')">-</button>
+                            <button onclick="increment('mini-canjica-c/-colherzinha')">+</button>
+                            <h2 id="counting-mini-canjica-c/-colherzinha">0</h2>
+                            <button onclick="decrement('mini-canjica-c/-colherzinha')">-</button>
                         </div>
                         
                         <div class="container">
                             <label>brigadeiro de milho</label>
-                            <button onclick="increment('brigadeiro de milho')">+</button>
-                            <h2 id="counting"></h2>
-                            <button onclick="decrement('brigadeiro de milho')">-</button>
+                            <button onclick="increment('brigadeiro-de-milho')">+</button>
+                            <h2 id="counting-brigadeiro-de-milho">0</h2>
+                            <button onclick="decrement('brigadeiro-de-milho')">-</button>
                         </div>
                     
                     </div>
