@@ -65,3 +65,33 @@ body {
     color: white;
     border-radius: 8px;
 }
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 88, 45);
+    height: 120px;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.contato__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contato__redes h5, .contato__redes p, .contato__redes a {
+    margin: 0;
+}
+
+.contato__redes a {
+    color: black;
+    text-decoration: none;
+}
+
+.contato__redes a:hover {
+    text-decoration: underline;
+}
