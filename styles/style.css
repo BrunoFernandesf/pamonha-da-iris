@@ -18,6 +18,8 @@ body {
     margin: auto;
     position: relative;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .carrossel-slide {
@@ -43,4 +45,8 @@ img {
 .menu-item a {
     text-decoration: none;
     color: black;
+}
+
+.bannertexto {
+    font-size: ;
 }
