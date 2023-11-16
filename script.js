@@ -36,46 +36,45 @@ var data = 0;
 var pedidosSelecionados = [];
 
 // Incremento
-function increment(nomeItem) {
+function increment(nomeItem, countingId) {
     data = data + 1;
-    document.getElementById("counting").innerText = data;
+    document.getElementById(countingId).innerText = data;
 
     // Verificar se o nome do item já está presente no vetor
-    var index = pedidosSelecionados.indexOf(nomeItem);
+    var index = pedidosSelecionados.findIndex(item => item.nome === nomeItem);
 
-    if (data >= 1) {
-        if (index === -1) {
-            pedidosSelecionados.push(nomeItem);
-        }
-        pedidosSelecionados[index + 1] = data;
-        console.log(pedidosSelecionados);
+    if (index === -1) {
+        pedidosSelecionados.push({ nome: nomeItem, quantidade: data });
+    } else {
+        pedidosSelecionados[index].quantidade = data;
     }
+
+    console.log(pedidosSelecionados);
 }
 
 // Decremento
-function decrement(nomeItem) {
+function decrement(nomeItem, countingId) {
     if (data > 0) {
         data = data - 1;
-        document.getElementById("counting").innerText = data;
+        document.getElementById(countingId).innerText = data;
 
         // Remover o nome do item do vetor se a quantidade for zero
         if (data === 0) {
-            var index = pedidosSelecionados.indexOf(nomeItem);
+            var index = pedidosSelecionados.findIndex(item => item.nome === nomeItem);
             if (index !== -1) {
-                pedidosSelecionados.splice(index, 2);
+                pedidosSelecionados.splice(index, 1);
             }
         } else {
             // Atualizar a quantidade se ainda houver itens
-            var index = pedidosSelecionados.indexOf(nomeItem);
+            var index = pedidosSelecionados.findIndex(item => item.nome === nomeItem);
             if (index !== -1) {
-                pedidosSelecionados[index + 1] = data;
+                pedidosSelecionados[index].quantidade = data;
             }
         }
 
         console.log(pedidosSelecionados);
     }
 }
-
 
 
 //Função envio whatsapp
@@ -91,6 +90,8 @@ function whatsenviar(){
     var numero = document.querySelector('.numero').value;
     var cidade = document.querySelector('.cidade').value;
     
+    var pedidosString = JSON.stringify(pedidosSelecionados);
+
     var url = "https://wa.me/" + cel + "?text="
     +"*Nome :*" +nome+"%0a"
     +"*telefone :*" +telefone+"%0a"
@@ -98,7 +99,7 @@ function whatsenviar(){
     +"*endereco :*" +endereco+"%0a"
     +"*numero :*" +numero+"%0a"
     +"*cidade :*" +cidade+"%0a"
-    +"pedidos: "+pedidosSelecionados+"%0a%0a"
+    +"pedidos: "+pedidosString+"%0a%0a"
 
     window.open(url, '_blank').focus();
 }
