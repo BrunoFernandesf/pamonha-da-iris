@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    //Muda a cada 5 seg
+    //Mudança slide tempo
     setInterval(nextSlide, 3000);
 });
 

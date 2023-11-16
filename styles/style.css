@@ -3,6 +3,7 @@ body {
     text-align: center;
     margin: 0;
     font-family: Arial, sans-serif;
+    border: 2px black solid;
 }
 
 .container-menu {
