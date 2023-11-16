@@ -32,50 +32,29 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(nextSlide, 3000);
 });
 
-var data = 0;
-var pedidosSelecionados = [];
+var pedidosSelecionados = {};
 
 // Incremento
-function increment(nomeItem, countingId) {
-    data = data + 1;
-    document.getElementById(countingId).innerText = data;
-
-    // Verificar se o nome do item já está presente no vetor
-    var index = pedidosSelecionados.findIndex(item => item.nome === nomeItem);
-
-    if (index === -1) {
-        pedidosSelecionados.push({ nome: nomeItem, quantidade: data });
-    } else {
-        pedidosSelecionados[index].quantidade = data;
+function increment(nomeItem) {
+    if (!pedidosSelecionados[nomeItem]) {
+        pedidosSelecionados[nomeItem] = 0;
     }
+
+    pedidosSelecionados[nomeItem]++;
+    document.getElementById("counting-" + nomeItem).innerText = pedidosSelecionados[nomeItem];
 
     console.log(pedidosSelecionados);
 }
 
 // Decremento
-function decrement(nomeItem, countingId) {
-    if (data > 0) {
-        data = data - 1;
-        document.getElementById(countingId).innerText = data;
-
-        // Remover o nome do item do vetor se a quantidade for zero
-        if (data === 0) {
-            var index = pedidosSelecionados.findIndex(item => item.nome === nomeItem);
-            if (index !== -1) {
-                pedidosSelecionados.splice(index, 1);
-            }
-        } else {
-            // Atualizar a quantidade se ainda houver itens
-            var index = pedidosSelecionados.findIndex(item => item.nome === nomeItem);
-            if (index !== -1) {
-                pedidosSelecionados[index].quantidade = data;
-            }
-        }
+function decrement(nomeItem) {
+    if (pedidosSelecionados[nomeItem] > 0) {
+        pedidosSelecionados[nomeItem]--;
+        document.getElementById("counting-" + nomeItem).innerText = pedidosSelecionados[nomeItem];
 
         console.log(pedidosSelecionados);
     }
 }
-
 
 //Função envio whatsapp
 function whatsenviar(){
