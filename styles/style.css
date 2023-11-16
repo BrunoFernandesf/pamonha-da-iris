@@ -18,6 +18,8 @@ body {
     margin: auto;
     position: relative;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .carrossel-slide {
@@ -45,77 +47,6 @@ img {
     color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.links {
-    
-}
-
-.links__acesso {
-    
-}
-
-#links__acesso1 {
-    background-color: rgb(51, 78, 37);
-}
-
-.links a {
-    color: black;
-    text-decoration: none;
-}
-
-.links a:hover {
-    text-decoration: underline;
-}
-
-.contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-    padding: 20px;
-}
-
-.contato__redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.contato__redes h5, .contato__redes p, .contato__redes a {
-    margin: 0;
-}
-
-.contato__redes a {
-    color: black;
-    text-decoration: none;
-}
-
-.contato__redes a:hover {
-    text-decoration: underline;
+.bannertexto {
+    font-size: ;
 }
