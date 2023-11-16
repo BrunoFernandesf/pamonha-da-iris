@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //Mudança slide tempo
-    setInterval(nextSlide, 3000);
+    setInterval(nextSlide, 5000);
 });
 
 var pedidosSelecionados = {};
