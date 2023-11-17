@@ -49,6 +49,7 @@ body {
   ul li {
     margin-bottom: 16px;
     display: flex;
+    justify-content: space-between;
   }
   
   li .details {
