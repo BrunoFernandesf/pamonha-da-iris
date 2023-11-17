@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 /* font-family: 'Sulphur Point', sans-serif;*/
 
 :root {
@@ -20,7 +21,6 @@ body {
 	background-color: var(--bege-fundo);
     text-align: center;
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 .container__header {
