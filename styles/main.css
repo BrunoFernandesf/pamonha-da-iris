@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
 /* font-family: 'Sulphur Point', sans-serif;*/
 
+:root {
+    --bege-fundo: #F1E7DD;
+    --amarelo-escuro: #FCB60D;
+    --preto: rgb(4, 2, 1);
+    --marrom: rgb(133, 39, 3);
+    --verde-escuro: #39562A;
+    --verde-medio: rgb(63, 95, 46);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,7 +17,7 @@
 
 body {
 	font-family: 'Sulphur Point', sans-serif;
-	background-color: #f3ebe2;
+	background-color: var(--bege-fundo);
     text-align: center;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -19,13 +28,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(60, 88, 45);
+    background-color: var(--verde-escuro);
     height: 120px;
     border: 1px solid black;
 }
 
 .container__header__logo {
-    width: 500px; 
+    width: 300px;
     height: 120px;
 }
 
@@ -54,7 +63,7 @@ body {
 
 .menu__item a {
     text-decoration: none;
-    color: rgb(190, 152, 61);
+    color: var(--amarelo-escuro);
     padding: 8px 16px; 
     display: block;
     box-sizing: border-box;
