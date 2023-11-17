@@ -28,7 +28,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: var(--verde-escuro);
-    height: 120px;
+    height: 125px;
 }
 
 .container__header__logo {
@@ -48,15 +48,16 @@ body {
 
 .menu {
     list-style: none;
-    margin: 0;
+    margin: 100px;
 }
 
 .menu__item {
     background-color: rgb(51, 78, 37); 
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 15px;
     border-radius: 12px;
-
+    font-size: 23px;
+    font-weight: 700;
 }
 
 .menu__item a {

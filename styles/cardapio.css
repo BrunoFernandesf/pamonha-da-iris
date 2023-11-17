@@ -2,11 +2,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .main_itens {
   display:flex;
 }
