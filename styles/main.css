@@ -2,16 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 /* font-family: 'Sulphur Point', sans-serif;*/
+/* font-family: 'Archivo Black', sans-serif; */
 
 /* Variáveis de cores */
 :root {
     --bege-fundo: #F1E7DD;
     /* 241 231  221*/
     --amarelo-escuro: #FCB60D;
+    /* 252 182 13 */
     --preto: rgb(4, 2, 1);
     --marrom: rgb(133, 39, 3);
     --verde-escuro: #556417;
+    /* 85 100 23 */
     --verde-medio: #3C4C02;
+    /* 60 76 2 */
 }
 
 * {
@@ -93,30 +97,58 @@ body {
 /* RODAPÉ */
 .contato {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 19.5%;
     background-color: var(--verde-escuro);
-    height: 120px;
+    height: 90px;
     border: 1px solid var(--verde-escuro);
-    flex-direction: column;
+    margin-top: 25px;
+}
+
+.container_contato {
+    display: flex;
+    gap: 10px;
+    margin-left: 1%;
+}
+
+.contato_img {
+    width: 46px;
+    height: 46px;
 }
 
 .contato__redes {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-start;
+    display: block;
 }
 
-.contato__redes h5, .contato__redes p, .contato__redes a {
-    margin: 0;
+.contato__redes p{
+    display: block;
 }
 
-.contato__redes a {
-    color: black;
-    text-decoration: none;
+.contato__redes__p1 {
+    font-family: 'Agbalumo';
+    word-spacing: 2px;
+    font-size: 18px;
+    color: var(--amarelo-escuro);
+    margin-bottom: 8px;
 }
 
-.contato__redes a:hover {
-    text-decoration: underline;
+.contato__redes__p2 {
+    color: var(--bege-fundo);
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 16.5px;
+    font-weight: 700;
+    text-shadow: -0.5px 0 black, 0 0.5px black,
+    0.5px 0 black, 0 -0.5px black;
+}
+
+#contato_coracao {
+    color: rgb(199, 2, 2);
+}
+
+.container_contato a:hover {
+    filter: invert(1);
 }

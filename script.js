@@ -75,7 +75,7 @@ function decrement(nomeItem) {
 function whatsenviar() {
     console.log("Função whatsenviar() chamada!");
 
-    var cel = "+5511975602377";
+    var cel = "+5511963220463";
 
     var nome = document.querySelector('.nome').value;
     var telefone = document.querySelector('.telefone').value;

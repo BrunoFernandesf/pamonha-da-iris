@@ -82,7 +82,8 @@ body {
     width: 75%;
     height: 85%;
     object-fit: contain;
-    border-radius: 5%;
+    border: 8px solid rgba(133, 39, 3, 0.8);
+    border-radius: 50%;
 }
 
 .carrosel-bullets {
