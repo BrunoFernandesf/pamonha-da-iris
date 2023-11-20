@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    
 }
 
 /* CARROSSEL DE SLIDES */
@@ -29,7 +30,38 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left:15px;
+}
 
+.bannertexto h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 40px;
+    word-spacing: -10px;
+    text-transform: capitalize;
+    text-align:left;
+    line-height: 42px;
+    word-spacing: -1px;
+    color: var(--marrom);
+    margin-bottom: 12px;
+}
+
+.bannertexto span{
+    color: var(--amarelo-escuro);
+    font-weight: 300;
+    text-transform: lowercase;
+    font-family: 'Sulphur Point', sans-serif;
+    word-spacing: -10px;
+}
+
+
+.bannertexto p {
+    font-size: 19px;
+    word-spacing: -5px;
+    text-transform:none;
+    text-align:left;
+    margin-top: 5px;
+    color: var(--verde-medio);
+    font-weight: 400;
 }
 
 .bannerimagem {
@@ -37,7 +69,6 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-
 }
 
 .bannerimagem img {
@@ -67,23 +98,33 @@ body {
     background-color: black;
 }
 
+.links {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
 .links__acesso {
-    background-color: rgb(51, 78, 37); 
+    background-color: var(--bege-fundo); 
     display: inline-block;
     padding: 8px 12px;
     margin-right: 10px;
     margin-top: 10px;
-    border-radius: 8px;
+    border-radius: 18px;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 .links a {
-    color: var(--amarelo-escuro);
+    color: var(--verde-escuro);
     text-decoration: none;
+    border: 2px solid var(--verde-escuro);
+    word-spacing: 0;
+    text-transform: none;
+
 }
 
 .links a:hover {
-    text-decoration: underline;
-    background-color: rgb(51, 78, 37);
-    color: white;
-    border-radius: 8px;
+    background-color: var(--verde-medio);
+    color: var(--bege-fundo);
+    border-radius: 18px;
 }
