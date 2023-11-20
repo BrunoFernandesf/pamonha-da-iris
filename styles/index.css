@@ -6,8 +6,7 @@ body {
 /* CARROSSEL DE SLIDES */
 .carrossel-container {
     overflow: hidden;
-    width: 100%;
-    margin: auto;
+    width: 100vw;
     position: relative;
     height: 70vh;
 }
@@ -15,12 +14,20 @@ body {
 .carrossel-wrapper {
     display: flex;
     transition: transform 0.5s;
+    width: 98%;
+    margin-right: 50px;
 }
 
 .carrossel-slide {
     flex: 0 0 100%;
     display: flex;
     height: 81vh;
+    border: 10px solid var(--verde-escuro);
+    border-radius: 30px;
+    background-color: var(--bege-fundo);
+    gap: 5px;
+
+
 }
 
 .bannertexto {
@@ -83,6 +90,7 @@ body {
     margin-top: -20px;
     margin-bottom: 10px;
     overflow: hidden;
+
 }
 
 .bullet {
@@ -92,6 +100,7 @@ body {
     background-color: gray;
     margin: 0 5px;
     cursor: pointer;
+    z-index: 3;
 }
 
 .bullet.active {

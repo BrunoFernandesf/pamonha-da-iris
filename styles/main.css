@@ -6,6 +6,7 @@
 /* Variáveis de cores */
 :root {
     --bege-fundo: #F1E7DD;
+    /* 241 231  221*/
     --amarelo-escuro: #FCB60D;
     --preto: rgb(4, 2, 1);
     --marrom: rgb(133, 39, 3);
@@ -20,9 +21,9 @@
 
 body {
 	font-family: 'Sulphur Point', sans-serif;
-	background-color: var(--bege-fundo);
+	background-color: var(--verde-escuro);
     text-align: center;
-    margin: 0;
+    border: 10px solid var(--verde-escuro);
 }
 
 /* CABEÇALHO */
@@ -32,6 +33,7 @@ body {
     justify-content: space-between;
     background-color: var(--verde-escuro);
     height: 130px;
+    font-family: 'Sulphur Point', sans-serif;
 }
 
 .container__header__logo {
@@ -58,30 +60,34 @@ body {
 
 .menu {
     list-style: none;
-    margin: 100px;
+    padding: 100px;
+    margin-right: 75px;
 }
 
 .menu__item {
-    background-color: rgb(51, 78, 37); 
+    background-color: var(--verde-escuro); 
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 10px;
     border-radius: 12px;
     font-size: 23px;
-    font-weight: 700;
+    font-weight: 300;
+    text-transform: lowercase;
 }
 
 .menu__item a {
     text-decoration: none;
-    color: var(--amarelo-escuro);
+    color: var(--bege-fundo);
     padding: 8px 16px; 
     display: block;
     box-sizing: border-box;
 }
 
 .menu__item a:hover {
-    background-color: rgb(51, 78, 37);
-    color: white;
-    border-radius: 8px;
+    background-color: rgba(241, 231,  221, 0.2);
+    color: var(--amarelo-escuro);
+    font-weight: 700;
+    border: 1px solid var(--bege-fundo);
+    border-radius: 24px;
 }
 
 /* RODAPÉ */
@@ -91,7 +97,7 @@ body {
     justify-content: center;
     background-color: var(--verde-escuro);
     height: 120px;
-    border: 1px solid black;
+    border: 1px solid var(--verde-escuro);
     flex-direction: column;
 }
 
