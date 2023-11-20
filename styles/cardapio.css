@@ -50,7 +50,7 @@ body {
   }
   
   li .details {
-  max-width: 219px;
+    max-width: 219px;
   }
   
   .details h3 {
@@ -74,3 +74,20 @@ body {
     font-size: 14px;
     line-height: 21px;
   }
+
+/* SEPARAÇÃO DO CARDÁPIO EM BLOCOS */
+  .main_itens {
+    display: flex;
+    flex-direction: column; /* Colunas principais */
+}
+
+.linha_1,
+.linha_2 {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos ao longo da linha */
+}
+
+.produtos {
+    width: 30%; /* Ajuste conforme necessário */
+    border: 1px solid #000; /* Adicione uma borda para visualização */
+}
