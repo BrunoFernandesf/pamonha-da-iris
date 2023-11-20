@@ -41,7 +41,9 @@ body {
     font-size: 18px;
   }
   
-  ul li {
+  /* ANTIGO ul li */
+  /* MODIFICADO PARA NÃO AFETAR O MENU DO CABEÇALHO */
+  .itens li {
     margin-bottom: 16px;
     display: flex;
     justify-content: space-between;
