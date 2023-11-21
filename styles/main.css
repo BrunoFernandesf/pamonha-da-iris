@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 /* font-family: 'Sulphur Point', sans-serif;*/
+/*font-family: 'Comic Neue', cursive;*/
 /* font-family: 'Archivo Black', sans-serif; */
 
 /* Variáveis de cores */
@@ -16,6 +17,8 @@
     /* 85 100 23 */
     --verde-medio: #3C4C02;
     /* 60 76 2 */
+    --vermelho: rgb(199, 2, 2);
+    --marrom-vinho: rgb(182, 18, 18);
 }
 
 * {
