@@ -35,7 +35,7 @@
     position: relative;
     }
     
-    .nome {
+    .nome, .telefone, .data_entrega {
     background: none;
     border: none;
     border-bottom: 1px solid #008A5B;
