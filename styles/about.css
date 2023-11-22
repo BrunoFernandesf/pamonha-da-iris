@@ -57,8 +57,9 @@
 
 .historia__texto p {
     color: var(--bege-fundo);
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Comic Neue', cursive;
+    word-spacing: 1px;
 }
 
 .historia__img {
@@ -86,7 +87,7 @@
     margin-left: 28px;
     width: 1500px;
     height: 830px;
-    background-color: var(--amarelo-escuro);
+    background-image: linear-gradient(to left top, #fcb60d, #fdb523, #feb531, #ffb43d, #ffb447, #ffb447, #ffb447, #ffb447, #ffb43d, #feb531, #fdb523, #fcb60d);
 }
 
 .mais__sobre__img {
@@ -100,8 +101,16 @@
 .mais__sobre__img img {
     width: 400px;
     height: 350px;
-    border: 2px solid var(--marrom);
+    margin-bottom: 15px;
     border-radius: 10px;
+    box-shadow: 12px 5px 5px var(--marrom);
+}
+
+.mais__sobre__img img:hover {
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+    transition: 1s ease;
 }
 
 #img_1 {
@@ -109,7 +118,7 @@
 }
 
 #img_2 {
-    margin-left: 200px;
+    margin-left: 150px;
     margin-bottom: -50px;
 }
 
@@ -123,30 +132,62 @@
     position: absolute;
     background-color: var(--verde-medio);
     padding: 5% 2% 5% 5%;
-    margin: 5% 0% 5% 42%;
+    margin: 5% 0% 5% 40%;
     border-radius: 10px;
+    box-shadow: 12px 5px 5px var(--marrom);
+}
+
+.mais__sobre .mais__sobre__texto:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 1s ease;
+}
+
+.mais__sobre__texto h3 {
+    color: var(--amarelo-escuro);
+    font-weight: 300;
+    text-transform: none;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 32px;
+}
+
+#mais__sobre__titulo2 {
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+
+.mais__sobre__texto p {
+    color: var(--bege-fundo);
+    font-size: 20px;
+    font-family: 'Comic Neue', cursive;
+    word-spacing: 1px;
+    padding-left: 50px;
 }
 
 /* FUNCIONÁRIOS */
 .funcionarios {
-    width: 95vw;
+    width: 1500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
 
 .funcionarios h4 {
-    width: 45%;
-    color: var(--verde-medio);
-    font-weight: 700;
-    font-family: 'Sulphur Point', sans-serif;
-    font-size: 24px;
+    font-size: 2.2em;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    word-spacing: -5px;
+    color: var(--marrom-vinho);
+    text-shadow: -1px 0 #DBAC51, 0 1px #DBAC51,
+    1px 0 #DBAC51, 0 -1px #DBAC51;
     margin-top: 25px;
-    border: 2px solid var(--marrom);
-    border-radius: 5px;
-    padding: 5px;
-    word-spacing: -3px;
+    text-align: left;
+    margin-left: 35px;
 }
 
 .funcionarios__container {
@@ -154,7 +195,28 @@
     justify-content: space-around;
 }
 
+.funcionaria {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
 .funcionaria img {
-    width: 60%;
-    height: 80%;
+    width: 85%;
+    height: 65%;
+    border: 4px solid var(--marrom);
+    border-radius: 50%;
+}
+
+.funcionaria__nome {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.8em;
+    color: var(--marrom);
+    font-weight: 700;
+}
+
+.funcionaria__sobre {
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.5em;
+    color: var(--verde-medio);
+    font-weight: 700;
 }
