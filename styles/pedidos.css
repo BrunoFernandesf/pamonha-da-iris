@@ -107,3 +107,41 @@
     #submit:hover{
     background-image: linear-gradient(to right,rgb(0, 138, 1), rgb(0, 138, 0));
     }
+
+/* PEDIDOS ITENS */
+.pedido__itens__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2%;
+  gap: 7%; /*Espaçamento entre as colunas*/
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.titulos__itens {
+  margin-bottom: 15px;
+}
+
+.containerDiferente {
+  gap: 15px;
+  margin-top: 15px;  
+}
+
+.container__itens {
+  display: flex;
+  gap:5px;
+}
+
+.titulos__itens__minidoces {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  gap: 15px;
+}
