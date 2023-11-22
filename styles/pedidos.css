@@ -1,3 +1,76 @@
 .container {
     text-transform: capitalize;
 }
+
+.box{
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 032);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+    width:75%;
+    margin-left: 175px;
+    margin-top: 1%;
+    padding:1.5%;
+    background-color: var(--bege-fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #008A5B; /*COR LETRAS*/
+    }
+
+    .pedido__clientes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width:70vw;
+    }
+   
+    fieldset {
+    border: none;
+    width:30%;
+    
+    }
+    .inputBox {
+    position: relative;
+    }
+    
+    .nome {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #008A5B;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    letter-spacing: 2px;
+    color: #008a00;
+    }
+
+    
+    .labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5;
+    }
+    .nome:focus ~ .labelInput,
+    .nome:valid ~ .labelInput {
+      top: -20px;
+      font-size: 12px;
+      color: #008A5B;
+      font-weight: bold;
+    }
+    #submit{
+    background-image: linear-gradient(to right, rgb(0, 138, 91)  , rgb(0, 161, 94));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    }
+    #submit:hover{
+    background-image: linear-gradient(to right,rgb(0, 138, 1), rgb(0, 138, 0));
+    }
