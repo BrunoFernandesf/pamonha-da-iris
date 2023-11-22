@@ -53,21 +53,18 @@
                          <!--LInha 2 Dados pedidos-->
                         <div class="pedido__clientes__linha2">
                             <div class="inputBox">
+                                <input type="text" name="endereco" id="id_endereco" class="endereco" required> 
                                 <label for="id_endereco" class="labelInput">Endereço</label>
-                                <input type="text" name="endereco" id="id_endereco" class="endereco" required>
-                                
                             </div>
                             
                             <div class="inputBox">
-                                <label for="id_numero" class="labelInput">Numero</label>
                                 <input type="number" name="numero" id="id_numero" class="numero" required>
-                                
+                                <label for="id_numero" class="labelInput">Numero</label>
                             </div>
                             
                             <div class="inputBox">
-                                <label for="id_cidade" class="labelInput">Bairro</label>
                                 <input type="text" name="cidade" id="id_cidade" class="cidade" required>
-                                
+                                <label for="id_cidade" class="labelInput">Bairro</label>           
                             </div>
     
                         </div>
@@ -341,7 +338,7 @@
                     </section>
                     
                          <br><br>
-                    <button type="button" onclick="whatsenviar();">Peça pelo whats</button>
+                    <button type="button" onclick="whatsenviar();" id="submit">Peça pelo whats</button>
                 </fieldset>
             </form>
         </div>

@@ -15,37 +15,49 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: #008A5B; /*COR LETRAS*/
+    color: var(--marrom); /*COR LETRAS*/
+    font-weight: bold;
+    font-family: 'Sulphur Point', sans-serif;
+    
     }
 
     .pedido__clientes {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         width:70vw;
+        gap: 75px;
+        margin-top: 10px;
     }
    
     fieldset {
-    border: none;
+    border: 2.5px solid var(--amarelo-escuro);
+    border-radius: 30px;
     width:30%;
-    
+    }
+    fieldset legend {
+        font-family: 'Comic Neue', cursive;
+        font-size: 36px;
+        color: var(--marrom-vinho);
     }
     .inputBox {
     position: relative;
     }
     
-    .nome, .telefone, .data_entrega {
+    .nome, .telefone, .data_entrega, .endereco, .numero, .cidade {
     background: none;
     border: none;
-    border-bottom: 1px solid #008A5B;
+    border-bottom: 1.8px solid var(--amarelo-escuro);
     outline: none;
     font-size: 16px;
     width: 100%;
     letter-spacing: 2px;
-    color: #008a00;
+    color: var(--verde-medio);
+    margin-bottom: 20px;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight:lighter;
     }
-
     
     .labelInput {
     position: absolute;
@@ -54,20 +66,38 @@
     pointer-events: none;
     transition: .5;
     }
+
     .nome:focus ~ .labelInput,
-    .nome:valid ~ .labelInput {
+    .nome:valid ~ .labelInput,
+    .telefone:focus ~ .labelInput,
+    .telefone:valid ~ .labelInput,
+    .endereco:focus ~ .labelInput,
+    .endereco:valid ~ .labelInput,
+    .numero:focus ~ .labelInput,
+    .numero:valid ~ .labelInput,
+    .cidade:focus ~ .labelInput,
+    .cidade:valid ~ .labelInput {
       top: -20px;
-      font-size: 12px;
-      color: #008A5B;
+      font-size: 13px;
+      color: var(--marrom-vinho);
       font-weight: bold;
+      font-family: 'Comic Neue', cursive;
     }
+
+    .data_entrega:focus + .labelInput,
+    .data_entrega:not(:placeholder-shown) + .labelInput {
+      transform: translateY(-20px);
+      font-size: 12px;
+    }
+
     #submit{
     background-image: linear-gradient(to right, rgb(0, 138, 91)  , rgb(0, 161, 94));
-    width: 100%;
+    width: 30%;
     border: none;
     padding: 15px;
+    margin-bottom: 20px;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 10px;
     }
