@@ -15,9 +15,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: var(--marrom); /*COR LETRAS*/
-    font-weight: bold;
-    font-family: 'Sulphur Point', sans-serif;
+    color: var(--marrom-vinho); /*COR LETRAS*/
+    font-size: 14px;
+    font-family: 'Archivo Black', sans-serif;
     
     }
 
@@ -37,10 +37,13 @@
     width:30%;
     }
     fieldset legend {
-        font-family: 'Comic Neue', cursive;
-        font-size: 36px;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 32px;
+        text-transform: capitalize;
+        word-spacing: -1px;
         color: var(--marrom-vinho);
-    }
+}
+
     .inputBox {
     position: relative;
     }
@@ -78,9 +81,9 @@
     .cidade:focus ~ .labelInput,
     .cidade:valid ~ .labelInput {
       top: -20px;
-      font-size: 13px;
-      color: var(--marrom-vinho);
-      font-weight: bold;
+      font-size: 14px;
+      color: var(--marrom);
+      font-weight: 700;
       font-family: 'Comic Neue', cursive;
     }
 
