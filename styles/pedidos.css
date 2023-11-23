@@ -134,6 +134,7 @@
   margin-top: 15px;  
 }
 
+/* Organização dos itens "+ 0 -" */
 .container__itens {
   display: flex;
   gap:5px;
@@ -142,11 +143,11 @@
 }
 
 .container__itens button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 2em;
-  color: var(--marrom-vinho);
+  background: none; /*Remoção da estilização padrão do button */
+  border: none; /*Remoção da estilização padrão do button */
+  cursor: pointer;  /*Muda o cursor para click */
+  font-size: 2em; /*Ajuste do tamanho do botão com base na fonte padrão definida */
+  color: var(--marrom-vinho); /*Cor do símbolo*/
 }
 
 .itens__button- {
