@@ -137,6 +137,7 @@
 .container__itens {
   display: flex;
   gap:5px;
+  align-items: center;
 }
 
 .titulos__itens__minidoces {
