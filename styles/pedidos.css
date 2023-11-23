@@ -7,18 +7,17 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 032);
     backdrop-filter: blur(3.1px);
     -webkit-backdrop-filter: blur(3.1px);
-    width:75%;
+    width:72.8%;
     margin-left: 175px;
     margin-top: 1%;
     padding:1.5%;
-    background-color: var(--bege-fundo);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: var(--marrom-vinho); /*COR LETRAS*/
+    color: var(--verde-medio);
     font-size: 14px;
-    font-family: 'Archivo Black', sans-serif;
-    
+    font-family: 'Comic Neue', cursive;
+    background-image: linear-gradient(to left top, #fcb60d, #fdb523, #feb531, #ffb43d, #ffb447, #ffb447, #ffb447, #ffb447, #ffb43d, #feb531, #fdb523, #fcb60d);
     }
 
     .pedido__clientes {
@@ -32,17 +31,23 @@
     }
    
     fieldset {
-    border: 2.5px solid var(--amarelo-escuro);
+    border: 4px solid var(--bege-fundo);
     border-radius: 30px;
     width:30%;
     }
     fieldset legend {
-        font-family: 'Archivo Black', sans-serif;
-        font-size: 32px;
+        font-family: 'Kalam', cursive;
+        text-shadow: 2px 2px 2px var(--marrom);
+        font-size: 42px;
         text-transform: capitalize;
         word-spacing: -1px;
         color: var(--marrom-vinho);
-}
+        display:flex;
+      }
+
+      .rotate {
+        transform: rotate(90deg); 
+      }
 
     .inputBox {
     position: relative;
@@ -51,29 +56,49 @@
     .nome, .telefone, .data_entrega, .endereco, .numero, .cidade {
     background: none;
     border: none;
-    border-bottom: 1.8px solid var(--amarelo-escuro);
+    border-bottom: 2px solid var(--verde-escuro);
     outline: none;
     font-size: 16px;
     width: 100%;
     letter-spacing: 2px;
-    color: var(--verde-medio);
+    color: var(--marrom-vinho);
     margin-bottom: 20px;
-    font-family: 'Archivo Black', sans-serif;
-    font-weight:lighter;
+    font-family: 'Archivo Black', sans-serif; /*LETRA QUE ESCREVE*/
+    font-weight: lighter;
     }
-    
-    .labelInput {
+
+    /*Remover seta numero*/
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Remover data*/
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+  color: var(--verde-escuro) !important;
+}
+
+    .labelInput { /*letra que aparece nome do campo*/
     position: absolute;
     top: 0px;
     left: 0px;
     pointer-events: none;
     transition: .5;
+    font-size:18px;
+    font-weight: 700;
     }
 
     .nome:focus ~ .labelInput,
     .nome:valid ~ .labelInput,
     .telefone:focus ~ .labelInput,
     .telefone:valid ~ .labelInput,
+    .data_entrega:focus ~ .labelInput,
+    .data_entrega:valid ~ .labelInput,
     .endereco:focus ~ .labelInput,
     .endereco:valid ~ .labelInput,
     .numero:focus ~ .labelInput,
@@ -81,31 +106,29 @@
     .cidade:focus ~ .labelInput,
     .cidade:valid ~ .labelInput {
       top: -20px;
-      font-size: 14px;
-      color: var(--marrom);
+      font-size: 16px;
+      color: var(--vermelho);
       font-weight: 700;
-      font-family: 'Comic Neue', cursive;
+      font-family: 'Comic Neue', cursive; /*LETRA QUE SOBE*/
     }
 
-    .data_entrega:focus + .labelInput,
-    .data_entrega:not(:placeholder-shown) + .labelInput {
-      transform: translateY(-20px);
-      font-size: 12px;
-    }
-
+/*Botão do ZAP*/
     #submit{
-    background-image: linear-gradient(to right, rgb(0, 138, 91)  , rgb(0, 161, 94));
-    width: 30%;
-    border: none;
-    padding: 15px;
+    background-color: #25D366;
+    width: 25%;
+    border: 3px solid white;
+    box-shadow: 4px 4px 8px  black;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 10px;
     margin-bottom: 20px;
     color: white;
-    font-size: 20px;
+    font-size: 26px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 30px;
+    font-family: 'Kalam', cursive;
     }
     #submit:hover{
-    background-image: linear-gradient(to right,rgb(0, 138, 1), rgb(0, 138, 0));
+      background-image: linear-gradient(to right, #25d366, #00c672, #00b97b, #00ac80, #009e81, #01947d, #078a78, #0f8073, #0d776b, #0b6f63, #09665c, #075e54);
     }
 
 /* PEDIDOS ITENS */
@@ -113,8 +136,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 2%;
-  gap: 7%; /*Espaçamento entre as colunas*/
+  padding: 5%;
+  gap: 4%; /*Espaçamento entre as colunas*/
 }
 
 .container {
@@ -127,6 +150,21 @@
 
 .titulos__itens {
   margin-bottom: 15px;
+  margin-right: 15px;
+  font-family: 'Kalam', cursive;
+  font-size: 20px;
+  border: 2px solid var(--amarelo-escuro);
+  border-radius: 30px;
+  width:65% auto;
+  background-color: var(--marrom);
+  color: var(--bege-fundo);
+}
+
+.container label {
+  font-size: 16.5px;
+}
+.mini__item__pamonha {
+  font-size: 16px;
 }
 
 .containerDiferente {

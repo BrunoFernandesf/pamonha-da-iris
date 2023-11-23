@@ -11,7 +11,7 @@
 :root {
     --bege-fundo: #F1E7DD;
     /* 241 231  221*/
-    --amarelo-escuro: #FCB60D;
+    --amarelo-escuro: rgb(253, 181, 13);
     /* 252 182 13 */
     --preto: rgb(4, 2, 1);
     --marrom: rgb(133, 39, 3);
@@ -19,8 +19,8 @@
     /* 85 100 23 */
     --verde-medio: #3C4C02;
     /* 60 76 2 */
-    --vermelho: rgb(199, 2, 2);
-    --marrom-vinho: rgb(182, 18, 18);
+    --vermelho: #c70202;
+    --marrom-vinho: #b61212;
 }
 
 * {

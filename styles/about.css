@@ -16,8 +16,7 @@
     font-weight: 400;
     word-spacing: -10px;
     color: var(--amarelo-escuro);
-    text-shadow: -1px 0 #DBAC51, 0 1px #DBAC51,
-    1px 0 #DBAC51, 0 -1px #DBAC51;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .about-us p {
@@ -183,8 +182,7 @@
     font-weight: 400;
     word-spacing: -5px;
     color: var(--marrom-vinho);
-    text-shadow: -1px 0 #DBAC51, 0 1px #DBAC51,
-    1px 0 #DBAC51, 0 -1px #DBAC51;
+    text-shadow: 2px 2px 4px var(--marrom);
     margin-top: 25px;
     text-align: left;
     margin-left: 35px;
