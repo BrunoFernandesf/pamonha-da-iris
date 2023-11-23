@@ -140,6 +140,11 @@ input[type=date]:focus::-webkit-datetime-edit {
   gap: 4%; /*Espaçamento entre as colunas*/
 }
 
+.pedido__itens__container label {
+  font-weight: 700;
+}
+
+
 .container {
   display: flex;
   justify-content: space-between;
