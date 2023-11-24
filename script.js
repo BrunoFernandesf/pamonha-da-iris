@@ -84,21 +84,26 @@ function whatsenviar() {
     var numero = document.querySelector('.numero').value;
     var cidade = document.querySelector('.cidade').value;
 
-    // Substitui os traços por espaços apenas nos nomes dos itens
-    var pedidosString = JSON.stringify(pedidosSelecionados, (key, value) => {
-        if (key === 'nome') {
-            return value.replace(/-/g, ' ');
-        }
-        return value;
-    });
+    // Inverte o formato da data para dd/mm/aaaa
+    var dataEntregaParts = data_entrega.split("-");
+    var dataEntregaFormatada = dataEntregaParts[2] + "/" + dataEntregaParts[1] + "/" + dataEntregaParts[0];
 
-    // Substitui todos os traços por espaços na string resultante
+    // Remove as chaves do objeto no pedido
+    var pedidosArray = [];
+    for (var key in pedidosSelecionados) {
+        if (pedidosSelecionados.hasOwnProperty(key)) {
+            pedidosArray.push(key + ": " + pedidosSelecionados[key]);
+        }
+    }
+    var pedidosString = pedidosArray.join(", ");
+
+    // Substitui os traços por espaços apenas nos nomes dos itens
     pedidosString = pedidosString.replace(/-/g, ' ');
 
     var url = "https://wa.me/" + cel + "?text="
         + "Nome : " + nome + "%0a"
         + "Telefone :" + telefone + "%0a"
-        + "Data entrega : " + data_entrega + "%0a"
+        + "Data entrega : " + dataEntregaFormatada + "%0a"
         + "Endereco : " + endereco + "%0a"
         + "Número : " + numero + "%0a"
         + "Cidade : " + cidade + "%0a"
