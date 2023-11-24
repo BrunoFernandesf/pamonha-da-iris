@@ -75,14 +75,14 @@ function decrement(nomeItem) {
 function whatsenviar() {
     console.log("Função whatsenviar() chamada!");
 
-    var cel = "+5511963220463";
+    var cel = "+5511987407396";
 
     var nome = document.querySelector('.nome').value;
     var telefone = document.querySelector('.telefone').value;
     var data_entrega = document.querySelector('.data_entrega').value;
     var endereco = document.querySelector('.endereco').value;
     var numero = document.querySelector('.numero').value;
-    var cidade = document.querySelector('.cidade').value;
+    var bairro = document.querySelector('.bairro').value;
 
     // Inverte o formato da data para dd/mm/aaaa
     var dataEntregaParts = data_entrega.split("-");
@@ -102,11 +102,11 @@ function whatsenviar() {
 
     var url = "https://wa.me/" + cel + "?text="
         + "Nome : " + nome + "%0a"
-        + "Telefone :" + telefone + "%0a"
+        + "Telefone : " + telefone + "%0a"
         + "Data entrega : " + dataEntregaFormatada + "%0a"
         + "Endereco : " + endereco + "%0a"
         + "Número : " + numero + "%0a"
-        + "Cidade : " + cidade + "%0a"
+        + "Bairro : " + bairro + "%0a"
         + "Pedido: " + pedidosString + "%0a%0a";
 
     window.open(url, '_blank').focus();
