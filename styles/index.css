@@ -181,10 +181,11 @@ body {
 
     .bannertexto h1 {
         text-align: center;
+        font-size: 30px;
     }
 
     .bannerimagem {
-        width: 70%;
+        width: 60%;
         margin: 25px 0 0 0; /* Ajuste de margem*/
     }
 
