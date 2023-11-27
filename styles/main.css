@@ -188,6 +188,7 @@ body {
 
     .menu {
         padding: 2% 0;
+        width: auto;
         justify-content: space-around;
     }
 
