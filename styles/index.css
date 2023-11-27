@@ -165,26 +165,52 @@ body {
         flex-direction: column-reverse;
         justify-content: flex-end;
         align-items: center;
+        gap: 1%;
     }
 
     .bannertexto {
-        width: 60%;
+        width: 90%;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex; /* Alinhamento do texto a esquerda */
         margin-left: 0;
         margin-right: 0;
+        padding: 2%;
+    }
+
+    .bannertexto h1 {
+        text-align: center;
     }
 
     .bannerimagem {
-        width: 60%;
+        width: 70%;
         margin: 25px 0 0 0; /* Ajuste de margem*/
+    }
+
+    .bannerimagem img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    /* ESPAÇAMENTO ESPECifÍCO */
+    #slidemenor1 img {
+        margin-top: 1%;
+    }
+    
+    #slidemenor1 .bannertexto {
+        margin-top: 15%;
+    }
+
+    #slidemenor2 .bannertexto {
+        margin-top: 10%;
     }
 
     .links {
         justify-content: center;
         margin: 0;
     }
+
+    .links a {}
 }

@@ -202,7 +202,7 @@ body {
     }
     
     .menu__item a {
-        padding: 0 0; /* Ajuste do espaçamento interno */
+        padding: 0; /* Ajuste do espaçamento interno */
         border-radius: 12px;
         font-size: 1.2em;
     }
