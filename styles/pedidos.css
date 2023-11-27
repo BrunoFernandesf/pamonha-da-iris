@@ -53,7 +53,7 @@
     position: relative;
     }
     
-    .nome, .telefone, .data_entrega, .endereco, .numero, .bairro {
+    .nome, .telefone, .data_entrega, .endereco, .numero, .cidade {
     background: none;
     border: none;
     border-bottom: 2px solid var(--verde-escuro);
@@ -103,8 +103,8 @@ input[type=date]:focus::-webkit-datetime-edit {
     .endereco:valid ~ .labelInput,
     .numero:focus ~ .labelInput,
     .numero:valid ~ .labelInput,
-    .bairro:focus ~ .labelInput,
-    .bairro:valid ~ .labelInput {
+    .cidade:focus ~ .labelInput,
+    .cidade:valid ~ .labelInput {
       top: -20px;
       font-size: 16px;
       color: var(--vermelho);
@@ -139,11 +139,6 @@ input[type=date]:focus::-webkit-datetime-edit {
   padding: 5%;
   gap: 4%; /*Espaçamento entre as colunas*/
 }
-
-.pedido__itens__container label {
-  font-weight: 700;
-}
-
 
 .container {
   display: flex;

@@ -140,3 +140,34 @@ body {
     color: var(--bege-fundo);
     border-radius: 18px;
 }
+
+@media screen and (max-width: 768px) {
+
+    /* CARROSSEL DE SLIDES */
+    .carrossel-slide {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .bannertexto {
+        width: 60%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex; /* Alinhamento do texto a esquerda */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bannerimagem {
+        width: 60%;
+        margin: 25px 0 0 0; /* Ajuste de margem*/
+    }
+
+    .links {
+        justify-content: center;
+        margin: 0;
+    }
+}
