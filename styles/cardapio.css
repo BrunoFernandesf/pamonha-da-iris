@@ -36,7 +36,7 @@ body {
   /* ANTIGO ul li */
   /* MODIFICADO PARA NÃO AFETAR O MENU DO CABEÇALHO */
   .itens li {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
   }
