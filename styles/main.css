@@ -33,9 +33,6 @@ body {
 	font-family: 'Sulphur Point', sans-serif;
 	background-color: var(--verde-escuro);
     text-align: center;
-    border: 10px solid var(--verde-escuro);
-    height: 100vh;
-    width: 100vw;
 }
 
 /* CABEÇALHO */
@@ -174,8 +171,9 @@ body {
     /* CABEÇALHO */
     .container__header {
         flex-direction: column;
+        width: auto;
         height: auto; 
-        padding: 1% 3%;
+        padding: 0;
         align-items: center;
     }
 

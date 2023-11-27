@@ -1,6 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    overflow-x: hidden;
-    
+    overflow-x: hidden;  
 }
 
 /* CARROSSEL DE SLIDES */
@@ -14,8 +19,8 @@ body {
 .carrossel-wrapper {
     display: flex;
     transition: transform 0.5s;
-    width: 98%;
-    margin-right: 50px;
+    width: 100%; /* Ajuste o valor conforme necessário, dependendo do número de slides */
+    margin-right: 0;
 }
 
 .carrossel-slide {
@@ -28,7 +33,7 @@ body {
     border-radius: 30px;
     background-color: var(--bege-fundo);
     gap: 5px;
-    
+
 }
 
 .bannertexto {
@@ -142,8 +147,20 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    /* BUG TAMANHO TELA */
+    html {
+        max-height: 1200px;
+        height: 100%;
+        overflow-y: auto;
+    }
 
     /* CARROSSEL DE SLIDES */
+    .carrossel-wrapper {
+        height: auto;
+        width: 100%; /* Certifica-se de que apenas um slide seja visível no modo móvel */
+        margin-right: 0;
+    }
+
     .carrossel-slide {
         flex-direction: column-reverse;
         justify-content: flex-end;
