@@ -209,4 +209,10 @@ body {
         font-size: 1.2em;
     }
 
+    /*RODAPÉ*/
+    .contato {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
