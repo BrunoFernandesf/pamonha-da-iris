@@ -120,3 +120,46 @@ body {
 #produtos__pamonhas li div {
   margin-bottom: 5px;
 }
+
+/*RESPONSIVIDADE*/
+@media only screen and (max-width:768px) {
+  .produtos {
+    width: 90%;
+}
+  .main_itens {
+    width: 90%;
+    margin-left: 4.5%;
+  }
+  .details p {
+    font-size: 90%;
+    margin-left: 9px;
+  }
+  .details h3 {
+    font-size: 110%;
+  }
+  .details1 {
+    font-size: 13px;
+  }
+  .price {
+    font-size: 110%;
+  }
+  section h2 {
+    font-size: 135%;
+  }
+  .linha_1, .linha_2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .itens li {
+    margin-bottom: 12px;
+  }
+  section {
+    max-width: none;
+  }
+  ul {
+    list-style: none;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+}
