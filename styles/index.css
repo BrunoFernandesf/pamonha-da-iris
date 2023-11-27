@@ -151,7 +151,7 @@ body {
     html {
         max-height: 1200px;
         height: 100%;
-        overflow-y: auto;
+        overflow-y: scroll;
     }
 
     /* CARROSSEL DE SLIDES */
@@ -176,7 +176,7 @@ body {
         justify-content: center;
         margin-left: 0;
         margin-right: 0;
-        padding: 2%;
+        padding: 1%;
     }
 
     .bannertexto h1 {
@@ -204,7 +204,7 @@ body {
     }
 
     #slidemenor2 .bannertexto {
-        margin-top: 10%;
+        margin-top: 8%;
     }
 
     .links {
