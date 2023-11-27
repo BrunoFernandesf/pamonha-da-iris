@@ -176,7 +176,7 @@ body {
         justify-content: center;
         margin-left: 0;
         margin-right: 0;
-        padding: 1%;
+        padding: 2%;
     }
 
     .bannertexto h1 {
@@ -200,11 +200,11 @@ body {
     }
     
     #slidemenor1 .bannertexto {
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     #slidemenor2 .bannertexto {
-        margin-top: 8%;
+        margin-top: 5%;
     }
 
     .links {
