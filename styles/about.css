@@ -82,25 +82,24 @@
     position: relative;
     box-sizing: border-box;
     max-width: 1600px !important;
-    margin-top: 50px;
-    margin-left: 28px;
+    margin: 0;
     width: 100%;
-    height: 830px;
+    height: 950px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     background-image: linear-gradient(to left top, #fcb60d, #fdb523, #feb531, #ffb43d, #ffb447, #ffb447, #ffb447, #ffb447, #ffb43d, #feb531, #fdb523, #fcb60d);
 }
 
 .mais__sobre__img {
-    z-index: 1;
-    width: 35%;
-    height: 700px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    width: 25%;
+    height: 30%;
+    margin: 0;
 }
 
 .mais__sobre__img img {
-    width: 400px;
-    height: 350px;
-    margin-bottom: 15px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     border-radius: 10px;
     box-shadow: 12px 5px 5px var(--marrom);
 }
@@ -113,25 +112,30 @@
 }
 
 #img_1 {
-    
+    align-self: flex-start;
+    margin-left: 3%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 3%;
 }
 
 #img_2 {
-    margin-left: 150px;
-    margin-bottom: -50px;
-}
-
-#img_3 {
-    margin-left: 400px;
+    margin: 0;
+    align-self: flex-end;
+    left: 70%;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 2%;
 }
 
 .mais__sobre__texto {
-    text-align: right;
-    width:50%;
-    position: absolute;
+    text-align: left;
+    width: 50%;
     background-color: var(--verde-medio);
     padding: 5% 2% 5% 5%;
-    margin: 5% 0% 5% 40%;
+    margin: 0;
+    position: relative;
+    left: 20%;
     border-radius: 10px;
     box-shadow: 12px 5px 5px var(--marrom);
 }
@@ -149,6 +153,7 @@
     text-transform: none;
     font-family: 'Sulphur Point', sans-serif;
     font-size: 32px;
+    text-align: center;
 }
 
 #mais__sobre__titulo2 {
@@ -240,40 +245,41 @@
 
     /* SEÇÃO MAIS SOBRE */
     .mais__sobre {
-        margin: 10% 0 0 0;
-        padding: 0;
-        flex-direction: column;
-        height: 100%;
-    }
-    
-    .mais__sobre__img  {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-
-    .mais__sobre__img  img{
-        width: 75%;
-        height: 35%;
-    }
-
-    #img_1 {
-        
-    }
-
-    #img_2 {
-        margin-left: 20%;
-        margin-bottom: 0;
-        margin-top: 5%;
+        height: 750px;
     }
 
     .mais__sobre__texto {
-        width: 95%;
-        margin: 0;
-        padding: 0;
-        position: relative;
+        width: 90%;
+        left: 0;
     }
+
+    .mais__sobre__texto h3 {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .mais__sobre__img {
+        width: 56%;
+        height: 20%;
+    }
+
+    .mais__sobre__texto p {
+        font-size: 16px;
+    }
+
+    #img_1 {
+        align-self: flex-end;
+        margin-left: 0%;
+        margin-bottom: 10%;
+    }
+
+    #img_2 {
+        margin: 0;
+        align-self: flex-start;
+        left: 41%;
+        position: absolute;
+        z-index: 1;
+        margin-top: 10%;
+    }
+
 }
