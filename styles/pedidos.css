@@ -203,18 +203,24 @@ input[type=date]:focus::-webkit-datetime-edit {
 
   /* AJUSTES GERAIS DA PÁGINA */
   .box {
-    width: 100%;
+    width: 95%;
     margin: 0;
     padding: 0;
+    margin-left: 3%;
+    justify-content: center;
   }
 
   fieldset {
     width: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   /* TAMANHO DA FRASE - FAÇA SEU PEDIDO */
   fieldset legend {
-    font-size: 40px;
+    font-size: 27px;
+    width: 80%;
   }
 
   legend {
@@ -247,7 +253,12 @@ input[type=date]:focus::-webkit-datetime-edit {
 
   /* ESTILIZAÇÃO BOTÃO WHATS */
   #submit {
-    width: 50%;
+    width: 60%;
+  }
+
+  .titulos__itens__minidoces {
+    justify-content: flex-start;
+    gap: 15%;
   }
 
 

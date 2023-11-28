@@ -180,12 +180,12 @@ body {
     }
 
     .bannertexto h1 {
-        text-align: center;
-        font-size: 26px;
+        text-align: left;
+        font-size: 30px;
     }
 
     .bannertexto span {
-        font-size: 24px;
+        font-size: 37px;
         word-spacing: -5px;
     }
 
