@@ -198,3 +198,57 @@ input[type=date]:focus::-webkit-datetime-edit {
   text-align: left;
   gap: 15px;
 }
+
+@media screen and (max-width: 768px) {
+
+  /* AJUSTES GERAIS DA PÁGINA */
+  .box {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  fieldset {
+    width: 100%;
+  }
+
+  /* TAMANHO DA FRASE - FAÇA SEU PEDIDO */
+  fieldset legend {
+    font-size: 40px;
+  }
+
+  legend {
+    width: 100%;
+  }
+
+  /* ESPAÇAMENTO NOME - PREÇO */
+  .container {
+    width: 95%;
+  }
+
+  /* MUDA ORIENTAÇÃO FORM DADOS CLIENTE */
+  .pedido__clientes {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 0px;
+  }
+
+  /* MUDA ORIENTACAO LISTA DE ITENS */
+  .pedido__itens__container {
+    flex-direction: column;
+  }
+
+  /* CONTAINERS NÃO TEM UM TAMANHO PADRÃO NO DESKTOP */
+  .pamonhas_pedido, .bolos_tortas_pedido, .demais_derivados_milho, .containerDiferente {
+    width: 100%;
+  }
+
+  /* ESTILIZAÇÃO BOTÃO WHATS */
+  #submit {
+    width: 50%;
+  }
+
+
+}

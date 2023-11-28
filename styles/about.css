@@ -39,7 +39,7 @@
 .historia__texto {
     background-color: var(--marrom);
     width: 50%;
-    padding: 25px;
+    padding: 5%;
     margin-right: 85%;
     position: absolute;
     z-index: 2;
@@ -84,7 +84,7 @@
     max-width: 1600px !important;
     margin-top: 50px;
     margin-left: 28px;
-    width: 1500px;
+    width: 100%;
     height: 830px;
     background-image: linear-gradient(to left top, #fcb60d, #fdb523, #feb531, #ffb43d, #ffb447, #ffb447, #ffb447, #ffb447, #ffb43d, #feb531, #fdb523, #fcb60d);
 }
@@ -166,7 +166,7 @@
 
 /* FUNCIONÁRIOS */
 .funcionarios {
-    width: 1500px;
+    width: 100%;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -217,4 +217,63 @@
     font-size: 1.5em;
     color: var(--verde-medio);
     font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    /* ESPAÇAMENTO SEÇÃO 2*/
+    .historia {
+        margin-top: 10%;
+    }
+
+    .historia__texto p {
+        font-size: 10px;
+    }
+    
+    /* TAMANHO DA ÁREA NOSSA HISTÓRIA */
+    .historia__texto {
+        width: 80%;
+    }
+
+    .historia__img {
+        width:80%;
+    }
+
+    /* SEÇÃO MAIS SOBRE */
+    .mais__sobre {
+        margin: 10% 0 0 0;
+        padding: 0;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .mais__sobre__img  {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mais__sobre__img  img{
+        width: 75%;
+        height: 35%;
+    }
+
+    #img_1 {
+        
+    }
+
+    #img_2 {
+        margin-left: 20%;
+        margin-bottom: 0;
+        margin-top: 5%;
+    }
+
+    .mais__sobre__texto {
+        width: 95%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
 }
