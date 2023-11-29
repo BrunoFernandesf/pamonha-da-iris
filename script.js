@@ -82,7 +82,7 @@ function whatsenviar() {
     var data_entrega = document.querySelector('.data_entrega').value;
     var endereco = document.querySelector('.endereco').value;
     var numero = document.querySelector('.numero').value;
-    var cidade = document.querySelector('.cidade').value;
+    var bairro = document.querySelector('.bairro').value;
 
     // Substitui os traços por espaços apenas nos nomes dos itens
     var pedidosString = JSON.stringify(pedidosSelecionados, (key, value) => {
@@ -98,12 +98,12 @@ function whatsenviar() {
     pedidosString = pedidosString.replace(/["{}]/g, ' ' );
 
     var url = "https://wa.me/" + cel + "?text="
-        + "Nome : " + nome + "%0a"
-        + "Telefone : " + telefone + "%0a"
-        + "Data entrega : " + data_entrega + "%0a"
-        + "Endereco : " + endereco + "%0a"
-        + "Número : " + numero + "%0a"
-        + "Cidade : " + cidade + "%0a"
+        + "Nome: " + nome + "%0a"
+        + "Telefone: " + telefone + "%0a"
+        + "Data entrega: " + data_entrega + "%0a"
+        + "Endereço: " + endereco + "%0a"
+        + "Número: " + numero + "%0a"
+        + "Bairro: " + bairro + "%0a"
         + "Pedido: " + pedidosString + "%0a%0a";
 
     window.open(url, '_blank').focus();

@@ -53,7 +53,7 @@
     position: relative;
     }
     
-    .nome, .telefone, .data_entrega, .endereco, .numero, .cidade {
+    .nome, .telefone, .data_entrega, .endereco, .numero, .bairro {
     background: none;
     border: none;
     border-bottom: 2px solid var(--verde-escuro);
@@ -103,8 +103,8 @@ input[type=date]:focus::-webkit-datetime-edit {
     .endereco:valid ~ .labelInput,
     .numero:focus ~ .labelInput,
     .numero:valid ~ .labelInput,
-    .cidade:focus ~ .labelInput,
-    .cidade:valid ~ .labelInput {
+    .bairro:focus ~ .labelInput,
+    .bairro:valid ~ .labelInput {
       top: -20px;
       font-size: 16px;
       color: var(--vermelho);
