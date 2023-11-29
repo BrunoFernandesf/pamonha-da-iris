@@ -95,9 +95,11 @@ function whatsenviar() {
     // Substitui todos os traços por espaços na string resultante
     pedidosString = pedidosString.replace(/-/g, ' ');
 
+    pedidosString = pedidosString.replace(/["{}]/g, ' ' );
+
     var url = "https://wa.me/" + cel + "?text="
         + "Nome : " + nome + "%0a"
-        + "Telefone :" + telefone + "%0a"
+        + "Telefone : " + telefone + "%0a"
         + "Data entrega : " + data_entrega + "%0a"
         + "Endereco : " + endereco + "%0a"
         + "Número : " + numero + "%0a"
